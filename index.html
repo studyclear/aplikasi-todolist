@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowDay - To Do & Focus App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>GrowDay 🌱</h1>
+    <p class="quote" id="dailyQuote"></p>
+
+    <div class="todo-section">
+      <h2>To-Do List</h2>
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Tambahkan tugas...">
+        <button onclick="addTask()">Tambah</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+
+    <div class="focus-section">
+      <h2>Focus Timer</h2>
+      <p id="timerDisplay">25:00</p>
+      <div class="timer-buttons">
+        <button onclick="startTimer()">Mulai</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+
+    <div class="reflection-section">
+      <h2>Refleksi Harian</h2>
+      <textarea id="reflectionInput" placeholder="Apa hal kecil yang kamu capai hari ini?"></textarea>
+      <button onclick="saveReflection()">Simpan Refleksi</button>
+      <p id="savedReflection"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
